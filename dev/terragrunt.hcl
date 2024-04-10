@@ -13,7 +13,7 @@ include "root" {
 
 inputs = {
   k3d_globals = {
-    name = "dev-k3d-test2"
+    name = "dev-k3d-test3"
   }
 
   ports_cfg = [
