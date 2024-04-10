@@ -1,0 +1,27 @@
+---
+name: CI Terragrunt k3d - dev
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - "dev/**"
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+    branches:
+      - "main"
+    paths:
+      - "dev/**"
+  workflow_dispatch:
+jobs:
+  tg-k3d:
+    uses: ixxeL-DevOps/gha-templates/.github/workflows/terragrunt.yaml@main
+    with:
+      workingdir: dev
+      environment: dev
+    secrets:
+      git-token: ${{ secrets.PAT }}
+        
