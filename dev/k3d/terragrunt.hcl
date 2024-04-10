@@ -12,7 +12,7 @@ include "root" {
 
 inputs = {
   k3d_globals = {
-    name = "dev-k3d"
+    name = "dev-k3d-test"
   }
 
   kubeconfig = {
