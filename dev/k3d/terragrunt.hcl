@@ -15,6 +15,11 @@ inputs = {
     name = "dev-k3d"
   }
 
+  kubeconfig = {
+    update_default_kubeconfig = true
+    switch_current_context    = true
+  }
+
   ports_cfg = [
     {
       host_port      = 8443,
