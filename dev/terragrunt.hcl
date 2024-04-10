@@ -1,6 +1,11 @@
+// terraform {
+//   source = "git::git@github.com:ixxeL-DevOps/terraform-k3d.git//k3d?ref=v0.1.0"
+// }
+
 terraform {
-  source = "git::git@github.com:ixxeL-DevOps/terraform-k3d.git//k3d?ref=v0.1.0"
+  source = "git::https://github.com/ixxeL-DevOps/terraform-k3d.git//k3d?ref=v0.1.0"
 }
+
 
 include "root" {
   path = find_in_parent_folders()
