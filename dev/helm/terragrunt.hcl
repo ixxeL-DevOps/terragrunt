@@ -11,15 +11,15 @@ include "root" {
 }
 
 dependency "k3d" {
-  config_path = "../k3d"
+  config_path  = "../k3d"
   skip_outputs = true
 }
 
 inputs = {
   helm_globals = {
-    name  = "windforlife"
-    chart = "helm-chart"
-    namespace = "windforlife"
+    name             = "windforlife"
+    chart            = "helm-chart"
+    namespace        = "windforlife"
     create_namespace = true
   }
 }

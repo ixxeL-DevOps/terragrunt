@@ -14,8 +14,3 @@ tasks:
   destroy:dev:
     cmds:
       - terragrunt run-all apply --terragrunt-non-interactive -auto-approve -destroy --terragrunt-working-dir dev
-
-
-
-
-
