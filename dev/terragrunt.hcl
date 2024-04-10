@@ -3,7 +3,7 @@
 // }
 
 terraform {
-  source = "git::https://github.com/ixxeL-DevOps/terraform-k3d.git//k3d?ref=v0.1.0" 
+  source = "git::https://github.com/ixxeL-DevOps/terraform-k3d.git//k3d?ref=v0.1.0"
 }
 
 
