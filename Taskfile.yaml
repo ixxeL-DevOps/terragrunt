@@ -1,0 +1,21 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  plan:dev:
+    cmds:
+      - terragrunt run-all plan --terragrunt-non-interactive --terragrunt-working-dir dev
+
+  apply:dev:
+    cmds:
+      - terragrunt run-all apply --terragrunt-non-interactive -auto-approve --terragrunt-working-dir dev
+
+  destroy:dev:
+    cmds:
+      - terragrunt run-all apply --terragrunt-non-interactive -auto-approve -destroy --terragrunt-working-dir dev
+
+
+
+
+
