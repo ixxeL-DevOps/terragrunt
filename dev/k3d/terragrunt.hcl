@@ -3,9 +3,8 @@
 // }
 
 terraform {
-  source = "git::https://github.com/ixxeL-DevOps/terraform-k3d.git//k3d?ref=v0.1.0"
+  source = "git::https://github.com/ixxeL-DevOps/terraform-modules.git//k3d?ref=v0.2.0"
 }
-
 
 include "root" {
   path = find_in_parent_folders()
